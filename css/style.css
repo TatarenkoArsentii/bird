@@ -1,15 +1,21 @@
+:root {
+  --main-bg-color: rgb(46, 143, 8);
+  --second-bg-color: rgb(11, 112, 45);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .header {
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
+  background-color: var(--main-bg-color);
+  padding-bottom: 15px;
 }
 
 .container {
-  background-color: rgb(166, 209, 47);
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -22,6 +28,7 @@
 .j-content-between {
   justify-content: space-between;
 }
+
 .j-content-around {
   justify-content: space-around;
 }
@@ -40,15 +47,20 @@
 /* default classes end */
 
 .header-wrap {
-  padding: 20px 20px 20px 5px;
+  padding: 10px 50px 20px;
 }
 
 .header-title {
   margin: 0 auto;
 }
-.header img {
+
+.header .logo {
   width: 100px;
   height: 100px;
+}
+
+.header-nav {
+  padding: 0 30px;
 }
 
 .header-nav .header-nav-ul {
@@ -64,15 +76,17 @@
   text-decoration: none;
   color: black;
 }
+
 .main {
   margin-top: 10px;
+  background-color: var(--main-bg-color);
 }
 
 .main-wrap {
   max-width: calc(60% - 10px);
   min-height: 400px;
-  padding: 20px 10px 20px 10px;
-  background-color: rgb(32, 175, 56);
+  padding: 20px 50px;
+  background-color: var(--second-bg-color);
 }
 
 .main-wrap .main-title {
@@ -81,34 +95,36 @@
 }
 
 .main-wrap .main-text {
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .aside-wrap {
   max-width: 40%;
   min-height: 400px;
   padding: 20px 0 20px 0;
-  background-color: rgb(100, 180, 25);
+  background-color: var(--second-bg-color);
 }
 
-.aside-wrap a {
-  margin-left: 55px;
-  margin-top: 15px;
+.aside-wrap .aside-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.aside-img-wrap {
+  max-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  margin-top: 10px;
 }
 
-.aside-wrap .aside-img {
+.aside-img-item {
   width: 200px;
   height: 200px;
 }
 
-.aside-wrap .aside-title {
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .footer {
   margin-top: 10px;
+  padding: 0 20px;
+  background-color: var(--main-bg-color);
 }
 
 .footer .container {
@@ -116,6 +132,6 @@
   padding: 20px 0 20px 30px;
 }
 
-.footer .container .footer-link-wrap {
+.footer .footer-link-wrap {
   margin-top: 30px;
 }
