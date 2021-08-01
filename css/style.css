@@ -29,6 +29,10 @@
   justify-content: space-between;
 }
 
+.j-content-center {
+  justify-content: center;
+}
+
 .j-content-around {
   justify-content: space-around;
 }
